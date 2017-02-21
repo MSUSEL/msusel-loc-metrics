@@ -1,0 +1,67 @@
+[
+  {
+    "name": "Java",
+    "language": "Java",
+    "extensions": [
+      "java"
+    ],
+    "lineCommentStart": "//",
+    "blockCommentStart": "/*",
+    "blockCommentEnd": "*/",
+    "commentStartExceptions": []
+  },
+  {
+    "name": "C#",
+    "language": "C#",
+    "extensions": [
+      "cs"
+    ],
+    "lineCommentStart": "//",
+    "blockCommentStart": "/*",
+    "blockCommentEnd": "*/",
+    "commentStartExceptions": []
+  },
+  {
+    "name": "Bourne Shell",
+    "language": "Bourne Shell",
+    "extensions": [
+      "sh"
+    ],
+    "lineCommentStart": "#",
+    "commentStartExceptions": [
+      "#!"
+    ]
+  },
+  {
+    "name": "Ruby",
+    "language": "ruby",
+    "extensions": [
+      "rb"
+    ],
+    "lineCommentStart": "#",
+    "commentStartExceptions": []
+  },
+  {
+    "name": "C",
+    "language": "C",
+    "extensions": [
+      "c"
+    ],
+    "lineCommentStart": "//",
+    "blockCommentStart": "/*",
+    "blockCommentEnd": "*/",
+    "commentStartExceptions": []
+  },
+  {
+    "name": "C++",
+    "language": "cpp",
+    "extensions": [
+      "cpp",
+      "cc"
+    ],
+    "lineCommentStart": "//",
+    "blockCommentStart": "/*",
+    "blockCommentEnd": "*/",
+    "commentStartExceptions": []
+  }
+]
