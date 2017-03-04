@@ -180,6 +180,24 @@ public class LoCCounter {
         commentStartExceptions = Lists.newArrayList();
         totals = Maps.newHashMap();
         langLOCTable = HashBasedTable.create();
+        initTotals();
+    }
+
+    /**
+     * 
+     */
+    private void initTotals()
+    {
+        totals.put(BLOC, 1);
+        totals.put(CLOC, 1);
+        totals.put(CSLOC, 1);
+        totals.put(DCLOC, 1);
+        totals.put(FILES, 1);
+        totals.put(SLOC, 1);
+        totals.put(SLOCL, 1);
+        totals.put(SLOCP, 1);
+        totals.put(HCLOC, 1);
+        totals.put(HCWORD, 1);
     }
 
     /**
@@ -412,7 +430,7 @@ public class LoCCounter {
      */
     public void reset()
     {
-        totals.clear();
+        initTotals();
         langLOCTable.clear();
     }
 
