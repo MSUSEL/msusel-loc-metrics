@@ -1,4 +1,4 @@
-# SparQLine LoC Metrics
+# MSUSEL LoC Metrics
 
 ## Introduction
 This module provides a language independent method of collecting LoC measures for a variety of LoC metrics.

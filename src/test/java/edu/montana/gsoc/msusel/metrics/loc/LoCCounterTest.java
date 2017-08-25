@@ -1,8 +1,9 @@
 /**
  * The MIT License (MIT)
  *
- * SparQLine Lines of Code Metrics
- * Copyright (c) 2015-2017 Isaac Griffith, SparQLine Analytics, LLC
+ * MSUSEL Lines of Code Metrics
+ * Copyright (c) 2015-2017 Montana State University, Gianforte School of Computing,
+ * Software Engineering Laboratory
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -22,7 +23,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package com.sparqline.metrics.loc;
+package edu.montana.gsoc.msusel.metrics.loc;
 
 import static org.junit.Assert.*;
 
@@ -32,7 +33,7 @@ import org.junit.Test;
 
 /**
  * @author Isaac Griffith
- *
+ * @version 1.1.1
  */
 public class LoCCounterTest {
 
@@ -53,7 +54,7 @@ public class LoCCounterTest {
     }
 
     /**
-     * Test method for {@link com.sparqline.metrics.loc.LoCCounter#LoCCounter(com.sparqline.metrics.loc.LoCProfile, java.lang.String)}.
+     * Test method for {@link edu.montana.gsoc.msusel.metrics.loc.LoCCounter#LoCCounter(edu.montana.gsoc.msusel.metrics.loc.LoCProfile, java.lang.String)}.
      */
     @Test
     public final void testLoCCounterLoCProfileString()
@@ -62,7 +63,7 @@ public class LoCCounterTest {
     }
 
     /**
-     * Test method for {@link com.sparqline.metrics.loc.LoCCounter#LoCCounter(java.lang.String, java.lang.String)}.
+     * Test method for {@link edu.montana.gsoc.msusel.metrics.loc.LoCCounter#LoCCounter(java.lang.String, java.lang.String)}.
      */
     @Test
     public final void testLoCCounterStringString()
@@ -71,7 +72,7 @@ public class LoCCounterTest {
     }
 
     /**
-     * Test method for {@link com.sparqline.metrics.loc.LoCCounter#LoCCounter(java.lang.String, java.lang.String, java.lang.String, java.lang.String)}.
+     * Test method for {@link edu.montana.gsoc.msusel.metrics.loc.LoCCounter#LoCCounter(java.lang.String, java.lang.String, java.lang.String, java.lang.String)}.
      */
     @Test
     public final void testLoCCounterStringStringStringString()
@@ -80,7 +81,7 @@ public class LoCCounterTest {
     }
 
     /**
-     * Test method for {@link com.sparqline.metrics.loc.LoCCounter#addLineCommentStartException(java.lang.String)}.
+     * Test method for {@link edu.montana.gsoc.msusel.metrics.loc.LoCCounter#addLineCommentStartException(java.lang.String)}.
      */
     @Test
     public final void testAddLineCommentStartException()
@@ -89,7 +90,7 @@ public class LoCCounterTest {
     }
 
     /**
-     * Test method for {@link com.sparqline.metrics.loc.LoCCounter#count(java.lang.String)}.
+     * Test method for {@link edu.montana.gsoc.msusel.metrics.loc.LoCCounter#count(java.lang.String)}.
      */
     @Test
     public final void testCount()
@@ -98,7 +99,7 @@ public class LoCCounterTest {
     }
 
     /**
-     * Test method for {@link com.sparqline.metrics.loc.LoCCounter#getBloc()}.
+     * Test method for {@link edu.montana.gsoc.msusel.metrics.loc.LoCCounter#getBloc()}.
      */
     @Test
     public final void testGetBloc()
@@ -107,7 +108,7 @@ public class LoCCounterTest {
     }
 
     /**
-     * Test method for {@link com.sparqline.metrics.loc.LoCCounter#getBloc(java.lang.String)}.
+     * Test method for {@link edu.montana.gsoc.msusel.metrics.loc.LoCCounter#getBloc(java.lang.String)}.
      */
     @Test
     public final void testGetBlocString()
@@ -116,7 +117,7 @@ public class LoCCounterTest {
     }
 
     /**
-     * Test method for {@link com.sparqline.metrics.loc.LoCCounter#getCloc()}.
+     * Test method for {@link edu.montana.gsoc.msusel.metrics.loc.LoCCounter#getCloc()}.
      */
     @Test
     public final void testGetCloc()
@@ -125,7 +126,7 @@ public class LoCCounterTest {
     }
 
     /**
-     * Test method for {@link com.sparqline.metrics.loc.LoCCounter#getCloc(java.lang.String)}.
+     * Test method for {@link edu.montana.gsoc.msusel.metrics.loc.LoCCounter#getCloc(java.lang.String)}.
      */
     @Test
     public final void testGetClocString()
@@ -134,7 +135,7 @@ public class LoCCounterTest {
     }
 
     /**
-     * Test method for {@link com.sparqline.metrics.loc.LoCCounter#getCsloc()}.
+     * Test method for {@link edu.montana.gsoc.msusel.metrics.loc.LoCCounter#getCsloc()}.
      */
     @Test
     public final void testGetCsloc()
@@ -143,7 +144,7 @@ public class LoCCounterTest {
     }
 
     /**
-     * Test method for {@link com.sparqline.metrics.loc.LoCCounter#getCsloc(java.lang.String)}.
+     * Test method for {@link edu.montana.gsoc.msusel.metrics.loc.LoCCounter#getCsloc(java.lang.String)}.
      */
     @Test
     public final void testGetCslocString()
@@ -152,7 +153,7 @@ public class LoCCounterTest {
     }
 
     /**
-     * Test method for {@link com.sparqline.metrics.loc.LoCCounter#getHcloc()}.
+     * Test method for {@link edu.montana.gsoc.msusel.metrics.loc.LoCCounter#getHcloc()}.
      */
     @Test
     public final void testGetHcloc()
@@ -161,7 +162,7 @@ public class LoCCounterTest {
     }
 
     /**
-     * Test method for {@link com.sparqline.metrics.loc.LoCCounter#getHcloc(java.lang.String)}.
+     * Test method for {@link edu.montana.gsoc.msusel.metrics.loc.LoCCounter#getHcloc(java.lang.String)}.
      */
     @Test
     public final void testGetHclocString()
@@ -170,7 +171,7 @@ public class LoCCounterTest {
     }
 
     /**
-     * Test method for {@link com.sparqline.metrics.loc.LoCCounter#getHcword()}.
+     * Test method for {@link edu.montana.gsoc.msusel.metrics.loc.LoCCounter#getHcword()}.
      */
     @Test
     public final void testGetHcword()
@@ -179,7 +180,7 @@ public class LoCCounterTest {
     }
 
     /**
-     * Test method for {@link com.sparqline.metrics.loc.LoCCounter#getHcword(java.lang.String)}.
+     * Test method for {@link edu.montana.gsoc.msusel.metrics.loc.LoCCounter#getHcword(java.lang.String)}.
      */
     @Test
     public final void testGetHcwordString()
@@ -188,7 +189,7 @@ public class LoCCounterTest {
     }
 
     /**
-     * Test method for {@link com.sparqline.metrics.loc.LoCCounter#getSloc()}.
+     * Test method for {@link edu.montana.gsoc.msusel.metrics.loc.LoCCounter#getSloc()}.
      */
     @Test
     public final void testGetSloc()
@@ -197,7 +198,7 @@ public class LoCCounterTest {
     }
 
     /**
-     * Test method for {@link com.sparqline.metrics.loc.LoCCounter#getSloc(java.lang.String)}.
+     * Test method for {@link edu.montana.gsoc.msusel.metrics.loc.LoCCounter#getSloc(java.lang.String)}.
      */
     @Test
     public final void testGetSlocString()
@@ -206,7 +207,7 @@ public class LoCCounterTest {
     }
 
     /**
-     * Test method for {@link com.sparqline.metrics.loc.LoCCounter#getSlocL()}.
+     * Test method for {@link edu.montana.gsoc.msusel.metrics.loc.LoCCounter#getSlocL()}.
      */
     @Test
     public final void testGetSlocL()
@@ -215,7 +216,7 @@ public class LoCCounterTest {
     }
 
     /**
-     * Test method for {@link com.sparqline.metrics.loc.LoCCounter#getSlocL(java.lang.String)}.
+     * Test method for {@link edu.montana.gsoc.msusel.metrics.loc.LoCCounter#getSlocL(java.lang.String)}.
      */
     @Test
     public final void testGetSlocLString()
@@ -224,7 +225,7 @@ public class LoCCounterTest {
     }
 
     /**
-     * Test method for {@link com.sparqline.metrics.loc.LoCCounter#getSlocP()}.
+     * Test method for {@link edu.montana.gsoc.msusel.metrics.loc.LoCCounter#getSlocP()}.
      */
     @Test
     public final void testGetSlocP()
@@ -233,7 +234,7 @@ public class LoCCounterTest {
     }
 
     /**
-     * Test method for {@link com.sparqline.metrics.loc.LoCCounter#getSlocP(java.lang.String)}.
+     * Test method for {@link edu.montana.gsoc.msusel.metrics.loc.LoCCounter#getSlocP(java.lang.String)}.
      */
     @Test
     public final void testGetSlocPString()
@@ -242,7 +243,7 @@ public class LoCCounterTest {
     }
 
     /**
-     * Test method for {@link com.sparqline.metrics.loc.LoCCounter#getDcloc()}.
+     * Test method for {@link edu.montana.gsoc.msusel.metrics.loc.LoCCounter#getDcloc()}.
      */
     @Test
     public final void testGetDcloc()
@@ -251,7 +252,7 @@ public class LoCCounterTest {
     }
 
     /**
-     * Test method for {@link com.sparqline.metrics.loc.LoCCounter#getDcloc(java.lang.String)}.
+     * Test method for {@link edu.montana.gsoc.msusel.metrics.loc.LoCCounter#getDcloc(java.lang.String)}.
      */
     @Test
     public final void testGetDclocString()
@@ -260,7 +261,7 @@ public class LoCCounterTest {
     }
 
     /**
-     * Test method for {@link com.sparqline.metrics.loc.LoCCounter#reset()}.
+     * Test method for {@link edu.montana.gsoc.msusel.metrics.loc.LoCCounter#reset()}.
      */
     @Test
     public final void testReset()
@@ -269,7 +270,7 @@ public class LoCCounterTest {
     }
 
     /**
-     * Test method for {@link com.sparqline.metrics.loc.LoCCounter#updateCounts(java.util.List)}.
+     * Test method for {@link edu.montana.gsoc.msusel.metrics.loc.LoCCounter#updateCounts(java.util.List)}.
      */
     @Test
     public final void testUpdateCounts()
@@ -278,7 +279,7 @@ public class LoCCounterTest {
     }
 
     /**
-     * Test method for {@link com.sparqline.metrics.loc.LoCCounter#setProfile(com.sparqline.metrics.loc.LoCProfile)}.
+     * Test method for {@link edu.montana.gsoc.msusel.metrics.loc.LoCCounter#setProfile(edu.montana.gsoc.msusel.metrics.loc.LoCProfile)}.
      */
     @Test
     public final void testSetProfile()

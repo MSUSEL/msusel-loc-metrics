@@ -1,8 +1,9 @@
 /**
  * The MIT License (MIT)
  *
- * SparQLine Lines of Code Metrics
- * Copyright (c) 2015-2017 Isaac Griffith, SparQLine Analytics, LLC
+ * MSUSEL Lines of Code Metrics
+ * Copyright (c) 2015-2017 Montana State University, Gianforte School of Computing,
+ * Software Engineering Laboratory
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -22,7 +23,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package com.sparqline.metrics.loc;
+package edu.montana.gsoc.msusel.metrics.loc;
 
 import static org.junit.Assert.*;
 
@@ -32,9 +33,9 @@ import org.junit.Test;
 
 /**
  * @author Isaac Griffith
- *
+ * @version 1.1.1
  */
-public class UnknownProfileExceptionTest {
+public class LoCProfileTest {
 
     /**
      * @throws java.lang.Exception
@@ -53,46 +54,64 @@ public class UnknownProfileExceptionTest {
     }
 
     /**
-     * Test method for {@link com.sparqline.metrics.loc.UnknownProfileException#UnknownProfileException()}.
+     * Test method for {@link edu.montana.gsoc.msusel.metrics.loc.LoCProfile#getName()}.
      */
     @Test
-    public final void testUnknownProfileException()
+    public final void testGetName()
     {
         fail("Not yet implemented"); // TODO
     }
 
     /**
-     * Test method for {@link com.sparqline.metrics.loc.UnknownProfileException#UnknownProfileException(java.lang.String, java.lang.Throwable, boolean, boolean)}.
+     * Test method for {@link edu.montana.gsoc.msusel.metrics.loc.LoCProfile#getLanguage()}.
      */
     @Test
-    public final void testUnknownProfileExceptionStringThrowableBooleanBoolean()
+    public final void testGetLanguage()
     {
         fail("Not yet implemented"); // TODO
     }
 
     /**
-     * Test method for {@link com.sparqline.metrics.loc.UnknownProfileException#UnknownProfileException(java.lang.String, java.lang.Throwable)}.
+     * Test method for {@link edu.montana.gsoc.msusel.metrics.loc.LoCProfile#getExtensions()}.
      */
     @Test
-    public final void testUnknownProfileExceptionStringThrowable()
+    public final void testGetExtensions()
     {
         fail("Not yet implemented"); // TODO
     }
 
     /**
-     * Test method for {@link com.sparqline.metrics.loc.UnknownProfileException#UnknownProfileException(java.lang.String)}.
+     * Test method for {@link edu.montana.gsoc.msusel.metrics.loc.LoCProfile#getLineCommentStart()}.
      */
     @Test
-    public final void testUnknownProfileExceptionString()
+    public final void testGetLineCommentStart()
     {
         fail("Not yet implemented"); // TODO
     }
 
     /**
-     * Test method for {@link com.sparqline.metrics.loc.UnknownProfileException#UnknownProfileException(java.lang.Throwable)}.
+     * Test method for {@link edu.montana.gsoc.msusel.metrics.loc.LoCProfile#getBlockCommentStart()}.
      */
     @Test
-    public final void testUnknownProfileExceptionThrowable()
+    public final void testGetBlockCommentStart()
+    {
+        fail("Not yet implemented"); // TODO
+    }
+
+    /**
+     * Test method for {@link edu.montana.gsoc.msusel.metrics.loc.LoCProfile#getBlockCommentEnd()}.
+     */
+    @Test
+    public final void testGetBlockCommentEnd()
+    {
+        fail("Not yet implemented"); // TODO
+    }
+
+    /**
+     * Test method for {@link edu.montana.gsoc.msusel.metrics.loc.LoCProfile#getCommentStartExceptions()}.
+     */
+    @Test
+    public final void testGetCommentStartExceptions()
     {
         fail("Not yet implemented"); // TODO
     }

@@ -1,8 +1,9 @@
 /**
  * The MIT License (MIT)
  *
- * SparQLine Lines of Code Metrics
- * Copyright (c) 2015-2017 Isaac Griffith, SparQLine Analytics, LLC
+ * MSUSEL Lines of Code Metrics
+ * Copyright (c) 2015-2017 Montana State University, Gianforte School of Computing,
+ * Software Engineering Laboratory
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -22,7 +23,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package com.sparqline.metrics.loc;
+package edu.montana.gsoc.msusel.metrics.loc;
 
 import java.util.List;
 
@@ -34,7 +35,7 @@ import com.google.common.collect.Lists;
  * Class used to configure the LoCCounter for a given language.
  * 
  * @author Isaac Griffith
- * @version 1.1.0
+ * @version 1.1.1
  */
 public class LoCProfile {
 
