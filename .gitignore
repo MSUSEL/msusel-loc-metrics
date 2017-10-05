@@ -4,3 +4,4 @@
 *.jar
 /.classpath
 /.project
+*.iml
