@@ -38,21 +38,31 @@ For the top 100 programming languages as identified by the TIOBE and PYPL indexe
 The second goal is to provide not only the ability to analyze a single file or group of files,
 but to simply analyze any provided text. We have met this goal.
 
-## Building the module
-This module's build management is handled by Maven. Thus to currently build and package the JAR files associated
-with this project one need only enter the following command:
+## Installing Maven
 
-`mvn clean package -Dmaven.test.skip=true`
+This project uses the Maven wrapper so that you do not need to install maven manually.
+The first time you go to build this project, simply execute the following command:
 
-(NOTE: the addition of the `-Dmaven.test.skip=true`, this is required as the tests are not yet written)
+```
+./mvnw clean install -Dmaven.test.skip=true
+```
+or for windows:
+```
+.\mvnw.cmd clean package -Dmaven.test.skip=true
+```
 
-This will produce a `target` directory in which two JAR files will appear. Both JAR files are executable but
-only one will have all the dependencies compiled into the JAR (it is marked in an obvious way).
+## Building
 
-## Deploying to the Maven Repository on BitBucket
-As this module evolves it will need to be placed in the SparQLine Analytics, LLC bitbucket maven repository.
-This can be accomplished by simply executing the following command (for the main brach of the git only):
+This project can be built using the following command:
 
-`mvn deploy -Dmaven.test.skip=true`
+```
+./mvnw clean package -Dmaven.test.skip=true
+```
 
-(NOTE: the addition of the `-Dmaven.test.skip=true`, this is required as the tests are not yet written)
+This project can be compile, tested, or packaged with the following commands:
+
+```
+./mvnw clean compile
+./mvnw clean test
+./mvnw clean package
+```
