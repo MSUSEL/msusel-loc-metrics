@@ -23,7 +23,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package edu.montana.gsoc.msusel.gsoc.msusel.metrics.loc;
+package edu.montana.gsoc.msusel.codetree.metrics.loc;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -335,7 +335,7 @@ public class SQLoCCli {
      * Prints the metrics collected to the console
      * 
      * @param counter
-     *            LoCCounter holding metric values
+     *            LoCCounter holding name values
      */
     private static void printMetrics(LoCCounter counter)
     {

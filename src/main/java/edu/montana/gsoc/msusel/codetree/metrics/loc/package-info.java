@@ -30,4 +30,4 @@
  * @author Isaac Griffith
  * @version 1.1.0
  */
-package edu.montana.gsoc.msusel.gsoc.msusel.metrics.loc;
+package edu.montana.gsoc.msusel.codetree.metrics.loc;

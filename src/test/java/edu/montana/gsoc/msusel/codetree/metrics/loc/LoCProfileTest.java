@@ -23,7 +23,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package edu.montana.gsoc.msusel.gsoc.msusel.metrics.loc;
+package edu.montana.gsoc.msusel.codetree.metrics.loc;
 
 import static org.junit.Assert.*;
 

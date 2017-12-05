@@ -23,7 +23,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package edu.montana.gsoc.msusel.gsoc.msusel.metrics.loc;
+package edu.montana.gsoc.msusel.codetree.metrics.loc;
 
 import java.util.Arrays;
 import java.util.List;
@@ -108,12 +108,12 @@ public class LoCCounter {
      */
     private List<String>                   commentStartExceptions;
     /**
-     * Table of LOC metric for each identified language. Each record is
+     * Table of LOC name for each identified language. Each record is
      * <Language, Metric, Value>. Metric names are the constants defined above.
      */
     private Table<String, String, Integer> langLOCTable;
     /**
-     * The map of the total values for each metric counted.
+     * The map of the total values for each name counted.
      */
     private Map<String, Integer>           totals;
     /**
@@ -251,7 +251,7 @@ public class LoCCounter {
     }
 
     /**
-     * @return Measurement value of the total Blank Lines of Code metric
+     * @return Measurement value of the total Blank Lines of Code name
      */
     public int getBloc()
     {
@@ -262,7 +262,7 @@ public class LoCCounter {
      * @param lang
      *            Language
      * @return measurement value of the given language specific subtotal Blank
-     *         Lines of Code metric
+     *         Lines of Code name
      */
     public int getBloc(String lang)
     {
@@ -270,7 +270,7 @@ public class LoCCounter {
     }
 
     /**
-     * @return Measurement value of the total Comment Lines of Code metric
+     * @return Measurement value of the total Comment Lines of Code name
      */
     public int getCloc()
     {
@@ -281,7 +281,7 @@ public class LoCCounter {
      * @param lang
      *            Language
      * @return measurement value of the given language specific subtotal Comment
-     *         Lines of Code metric
+     *         Lines of Code name
      */
     public int getCloc(String lang)
     {
@@ -290,7 +290,7 @@ public class LoCCounter {
 
     /**
      * @return Measurement value of the total Comments and Source Lines of Code
-     *         metric
+     *         name
      */
     public int getCsloc()
     {
@@ -301,7 +301,7 @@ public class LoCCounter {
      * @param lang
      *            Language
      * @return measurement value of the given language specific subtotal
-     *         Comments and Source Lines of Code metric
+     *         Comments and Source Lines of Code name
      */
     public int getCsloc(String lang)
     {
@@ -310,7 +310,7 @@ public class LoCCounter {
 
     /**
      * @return Measurement value of the total Header Comments Lines of Code
-     *         metric
+     *         name
      */
     public int getHcloc()
     {
@@ -321,7 +321,7 @@ public class LoCCounter {
      * @param lang
      *            Language
      * @return measurement value of the given language specific subtotal Header
-     *         Lines of Code metric
+     *         Lines of Code name
      */
     public int getHcloc(String lang)
     {
@@ -329,7 +329,7 @@ public class LoCCounter {
     }
 
     /**
-     * @return Measurement value of the total Header Words metric
+     * @return Measurement value of the total Header Words name
      */
     public int getHcword()
     {
@@ -340,7 +340,7 @@ public class LoCCounter {
      * @param lang
      *            Language
      * @return measurement value of the given language specific subtotal Header
-     *         Words metric
+     *         Words name
      */
     public int getHcword(String lang)
     {
@@ -348,7 +348,7 @@ public class LoCCounter {
     }
 
     /**
-     * @return Measurement value of the total Source Lines of Code metric
+     * @return Measurement value of the total Source Lines of Code name
      */
     public int getSloc()
     {
@@ -359,7 +359,7 @@ public class LoCCounter {
      * @param lang
      *            Language
      * @return measurement value of the given language specific subtotal Source
-     *         Lines of Code metric
+     *         Lines of Code name
      */
     public int getSloc(String lang)
     {
@@ -368,7 +368,7 @@ public class LoCCounter {
 
     /**
      * @return Measurement value of the total Source Lines of Code - Executable
-     *         Logical metric
+     *         Logical name
      */
     public int getSlocL()
     {
@@ -379,7 +379,7 @@ public class LoCCounter {
      * @param lang
      *            Language
      * @return measurement value of the given language specific subtotal Source
-     *         Lines of Code - Executable Logical metric
+     *         Lines of Code - Executable Logical name
      */
     public int getSlocL(String lang)
     {
@@ -388,7 +388,7 @@ public class LoCCounter {
 
     /**
      * @return Measurement value of the total Source Lines of Code - Executable
-     *         Physical metric
+     *         Physical name
      */
     public int getSlocP()
     {
@@ -399,7 +399,7 @@ public class LoCCounter {
      * @param lang
      *            Language
      * @return measurement value of the given language specific subtotal Source
-     *         Lines of Code - Executable Physical metric
+     *         Lines of Code - Executable Physical name
      */
     public int getSlocP(String lang)
     {
@@ -408,7 +408,7 @@ public class LoCCounter {
 
     /**
      * @return Measurement value of the total Documentation Comment Lines of
-     *         Code metric
+     *         Code name
      */
     public int getDcloc()
     {
@@ -419,7 +419,7 @@ public class LoCCounter {
      * @param lang
      *            Language
      * @return measurement value of the given language specific subtotal
-     *         Documentation Comment Lines of Code metric
+     *         Documentation Comment Lines of Code name
      */
     public int getDcloc(String lang)
     {
@@ -436,7 +436,7 @@ public class LoCCounter {
     }
 
     /**
-     * Provides the logic necessary to update the counts for each metric
+     * Provides the logic necessary to update the counts for each name
      * correctly
      * 
      * @param lines
@@ -607,7 +607,7 @@ public class LoCCounter {
     }
 
     /**
-     * Updates the language specific row of the table for the given metric by 1.
+     * Updates the language specific row of the table for the given name by 1.
      * 
      * @param metric
      *            Metric column in the table to update.
@@ -628,7 +628,7 @@ public class LoCCounter {
     }
 
     /**
-     * Updates the total value for the given metric.
+     * Updates the total value for the given name.
      * 
      * @param metric
      *            Metric column in the total row to update.
@@ -680,13 +680,13 @@ public class LoCCounter {
     }
 
     /**
-     * Retrieves the value from the table for the given language and metric.
+     * Retrieves the value from the table for the given language and name.
      * 
      * @param lang
      *            Language name
      * @param metric
      *            Metric name
-     * @return Measurement value for the given metric for the given language
+     * @return Measurement value for the given name for the given language
      */
     public Integer valueAt(String lang, String metric)
     {

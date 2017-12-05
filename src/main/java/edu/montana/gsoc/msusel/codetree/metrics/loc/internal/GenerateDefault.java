@@ -23,7 +23,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package edu.montana.gsoc.msusel.gsoc.msusel.metrics.loc.internal;
+package edu.montana.gsoc.msusel.codetree.metrics.loc.internal;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -37,7 +37,7 @@ import com.google.common.collect.Lists;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
-import edu.montana.gsoc.msusel.gsoc.msusel.metrics.loc.LoCProfile;
+import edu.montana.gsoc.msusel.codetree.metrics.loc.LoCProfile;
 
 /**
  * Generates a JSON document containing the default LOC Profiles for several
