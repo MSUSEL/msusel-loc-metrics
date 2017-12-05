@@ -23,7 +23,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package edu.montana.gsoc.msusel.metrics.loc;
+package edu.montana.gsoc.msusel.gsoc.msusel.metrics.loc;
 
 import static org.junit.Assert.*;
 
@@ -35,7 +35,7 @@ import org.junit.Test;
  * @author Isaac Griffith
  * @version 1.1.1
  */
-public class ProfileManagerTest {
+public class LoCProfileTest {
 
     /**
      * @throws java.lang.Exception
@@ -54,37 +54,64 @@ public class ProfileManagerTest {
     }
 
     /**
-     * Test method for {@link edu.montana.gsoc.msusel.metrics.loc.ProfileManager#ProfileManager()}.
+     * Test method for {@link LoCProfile#getName()}.
      */
     @Test
-    public final void testProfileManager()
+    public final void testGetName()
     {
         fail("Not yet implemented"); // TODO
     }
 
     /**
-     * Test method for {@link edu.montana.gsoc.msusel.metrics.loc.ProfileManager#addProfile(edu.montana.gsoc.msusel.metrics.loc.LoCProfile)}.
+     * Test method for {@link LoCProfile#getLanguage()}.
      */
     @Test
-    public final void testAddProfile()
+    public final void testGetLanguage()
     {
         fail("Not yet implemented"); // TODO
     }
 
     /**
-     * Test method for {@link edu.montana.gsoc.msusel.metrics.loc.ProfileManager#getProfileByExtension(java.lang.String)}.
+     * Test method for {@link LoCProfile#getExtensions()}.
      */
     @Test
-    public final void testGetProfileByExtension()
+    public final void testGetExtensions()
     {
         fail("Not yet implemented"); // TODO
     }
 
     /**
-     * Test method for {@link edu.montana.gsoc.msusel.metrics.loc.ProfileManager#getProfileByLanguage(java.lang.String)}.
+     * Test method for {@link LoCProfile#getLineCommentStart()}.
      */
     @Test
-    public final void testGetProfileByLanguage()
+    public final void testGetLineCommentStart()
+    {
+        fail("Not yet implemented"); // TODO
+    }
+
+    /**
+     * Test method for {@link LoCProfile#getBlockCommentStart()}.
+     */
+    @Test
+    public final void testGetBlockCommentStart()
+    {
+        fail("Not yet implemented"); // TODO
+    }
+
+    /**
+     * Test method for {@link LoCProfile#getBlockCommentEnd()}.
+     */
+    @Test
+    public final void testGetBlockCommentEnd()
+    {
+        fail("Not yet implemented"); // TODO
+    }
+
+    /**
+     * Test method for {@link LoCProfile#getCommentStartExceptions()}.
+     */
+    @Test
+    public final void testGetCommentStartExceptions()
     {
         fail("Not yet implemented"); // TODO
     }

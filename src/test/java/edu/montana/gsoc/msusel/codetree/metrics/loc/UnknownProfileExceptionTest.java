@@ -23,7 +23,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package edu.montana.gsoc.msusel.metrics.loc;
+package edu.montana.gsoc.msusel.gsoc.msusel.metrics.loc;
 
 import static org.junit.Assert.*;
 
@@ -54,7 +54,7 @@ public class UnknownProfileExceptionTest {
     }
 
     /**
-     * Test method for {@link edu.montana.gsoc.msusel.metrics.loc.UnknownProfileException#UnknownProfileException()}.
+     * Test method for {@link UnknownProfileException#UnknownProfileException()}.
      */
     @Test
     public final void testUnknownProfileException()
@@ -63,7 +63,7 @@ public class UnknownProfileExceptionTest {
     }
 
     /**
-     * Test method for {@link edu.montana.gsoc.msusel.metrics.loc.UnknownProfileException#UnknownProfileException(java.lang.String, java.lang.Throwable, boolean, boolean)}.
+     * Test method for {@link UnknownProfileException#UnknownProfileException(java.lang.String, java.lang.Throwable, boolean, boolean)}.
      */
     @Test
     public final void testUnknownProfileExceptionStringThrowableBooleanBoolean()
@@ -72,7 +72,7 @@ public class UnknownProfileExceptionTest {
     }
 
     /**
-     * Test method for {@link edu.montana.gsoc.msusel.metrics.loc.UnknownProfileException#UnknownProfileException(java.lang.String, java.lang.Throwable)}.
+     * Test method for {@link UnknownProfileException#UnknownProfileException(java.lang.String, java.lang.Throwable)}.
      */
     @Test
     public final void testUnknownProfileExceptionStringThrowable()
@@ -81,7 +81,7 @@ public class UnknownProfileExceptionTest {
     }
 
     /**
-     * Test method for {@link edu.montana.gsoc.msusel.metrics.loc.UnknownProfileException#UnknownProfileException(java.lang.String)}.
+     * Test method for {@link UnknownProfileException#UnknownProfileException(java.lang.String)}.
      */
     @Test
     public final void testUnknownProfileExceptionString()
@@ -90,7 +90,7 @@ public class UnknownProfileExceptionTest {
     }
 
     /**
-     * Test method for {@link edu.montana.gsoc.msusel.metrics.loc.UnknownProfileException#UnknownProfileException(java.lang.Throwable)}.
+     * Test method for {@link UnknownProfileException#UnknownProfileException(java.lang.Throwable)}.
      */
     @Test
     public final void testUnknownProfileExceptionThrowable()
