@@ -38,21 +38,71 @@ For the top 100 programming languages as identified by the TIOBE and PYPL indexe
 The second goal is to provide not only the ability to analyze a single file or group of files,
 but to simply analyze any provided text. We have met this goal.
 
-## Building the module
-This module's build management is handled by Maven. Thus to currently build and package the JAR files associated
-with this project one need only enter the following command:
+## MSUSEL Project dependencies
+This project depends on the following other MSUSEL sub-projects:
+1. [msusel-parent](https://github.com/MSUSEL/msusel-parent/)
 
-`mvn clean package -Dmaven.test.skip=true`
+## Building
+There are two options:
 
-(NOTE: the addition of the `-Dmaven.test.skip=true`, this is required as the tests are not yet written)
+1. You can use your own version of Maven and run the following commands at the command line, from the project root directory:
+   * Compiling:
+      ```bash
+        $ mvn clean compile -Dmaven.test.skip=true
+      ```
+   * Packaging into a Jar with dependencies
+      ```bash
+        $ mvn clean package -Dmaven.test.skip=true
+      ```
+   * Packaging into a Jar and deploying to the [maven repo](https://github.com/MSUSEL/msusel-maven-repo):
+      ```bash
+        $ mvn clean deploy -Dmaven.test.skip=true
+      ```
 
-This will produce a `target` directory in which two JAR files will appear. Both JAR files are executable but
-only one will have all the dependencies compiled into the JAR (it is marked in an obvious way).
+2. You can use the Maven wrapper which comes with the project:
+   * On Mac and Linux:
+      - Compiling:
+      ```bash
+        $ ./mvnw clean compile -Dmaven.test.skip=true
+      ```
+      - Packaging into a Jar with Dependencies:
+      ```bash
+        $ ./mvnw clean package -Dmaven.test.skip=true
+      ```
+      - Packaging into a Jar and deploying to the [maven repo](https://github.com/MSUSEL/msusel-maven-repo):
+      ```bash
+        $ ./mvnw clean deploy -Dmaven.test.skip=true
+      ```
+   * Windows:
+      - Compiling:
+      ```bash
+        $ .\mvnw.cmd clean compile -Dmaven.test.skip=true
+      ```
+      - Packaging into a Jar with Dependencies:
+      ```bash
+        $ .\mvnw.cmd clean package -Dmaven.test.skip=true
+      ```
+      - Packaging into a Jar and deploying to the [maven repo](https://github.com/MSUSEL/msusel-maven-repo):
+      ```bash
+        $ .\mvnw.cmd clean deploy -Dmaven.test.skip=true
+      ```
 
-## Deploying to the Maven Repository on BitBucket
-As this module evolves it will need to be placed in the SparQLine Analytics, LLC bitbucket maven repository.
-This can be accomplished by simply executing the following command (for the main brach of the git only):
+## License
+As will all projects from MSUSEL this project is licensed under the MIT open source license. All source files associated with this project should have a copy of the license at the top of the file.
 
-`mvn deploy -Dmaven.test.skip=true`
+If a build fails due to license header issues, this can be remedied using the following command sequence at the command line:
 
-(NOTE: the addition of the `-Dmaven.test.skip=true`, this is required as the tests are not yet written)
+- With an independently installed Maven system:
+    * Linux, Mac, Windows:
+    ```bash
+     $ mvn license:format
+    ```
+- Using the Maven Wrapper:
+    * Linux and Mac:
+    ```bash
+     $ ./mvnw license:format
+    ```
+    * Windows:
+    ```bash
+     $ .\mvnw.cmd license:format
+    ```
