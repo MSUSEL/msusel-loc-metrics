@@ -1,30 +1,84 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<parent>
-		<groupId>edu.montana.gsoc.msusel</groupId>
-		<artifactId>msusel-parent</artifactId>
-		<version>1.2.0-idg</version>
-	</parent>
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                      http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <parent>
+    <groupId>edu.montana.gsoc.msusel</groupId>
+    <artifactId>msusel-parent</artifactId>
+    <version>1.2.0-idg</version>
+  </parent>
 
-	<modelVersion>4.0.0</modelVersion>
+  <modelVersion>4.0.0</modelVersion>
 	<artifactId>msusel-loc-metrics</artifactId>
 	<name>MSUSEL LoC Analytics</name>
+	<description>Lines of Code Metrics Analysis tool</description>
 
-	<dependencies>
-		<dependency>
-			<groupId>commons-cli</groupId>
-			<artifactId>commons-cli</artifactId>
-			<version>1.3.1</version>
-		</dependency>
-		<dependency>
-			<groupId>com.google.code.gson</groupId>
-			<artifactId>gson</artifactId>
-			<version>2.8.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.commons</groupId>
-			<artifactId>commons-csv</artifactId>
-			<version>1.4</version>
-		</dependency>
-	</dependencies>
+  <developers>
+		<developer>
+			<id>isaac.griffith</id>
+			<name>Isaac Griffith</name>
+			<email>isaacgriffith@gmail.com</email>
+			<organization>MSUSEL</organization>
+			<organizationUrl>https://msusel.github.io/</organizationUrl>
+			<roles>
+				<role>Developer</role>
+			</roles>
+		</developer>
+	</developers>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<executions>
+					<execution>
+						<goals>
+							<goal>attached</goal>
+						</goals>
+						<phase>package</phase>
+						<configuration>
+							<descriptorRefs>
+								<descriptorRef>jar-with-dependencies</descriptorRef>
+							</descriptorRefs>
+							<archive>
+								<manifest>
+									<mainClass>edu.montana.gsoc.msusel.metrics.loc.SQLoCCli</mainClass>
+								</manifest>
+							</archive>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+	<repositories>
+			<repository>
+					<id>msusel-maven-repo</id>
+					<name>msusel-maven-repo</name>
+					<releases>
+							<enabled>true</enabled>
+					</releases>
+					<snapshots>
+							<enabled>false</enabled>
+					</snapshots>
+
+					<url>https://raw.github.com/MSUSEL/msusel-maven-repo/releases</url>
+			</repository>
+	</repositories>
+	<pluginRepositories>
+			<pluginRepository>
+					<id>synergian-repo</id>
+					<url>https://raw.github.com/synergian/wagon-git/releases</url>
+			</pluginRepository>
+	</pluginRepositories>
+	<distributionManagement>
+			<repository>
+					<id>msusel-maven-repo</id>
+					<name>msusel-maven-repo</name>
+					<url>git:releases://git@github.com:MSUSEL/msusel-maven-repo.git</url>
+			</repository>
+	</distributionManagement>
 </project>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @REM ----------------------------------------------------------------------------
 @REM Licensed to the Apache Software Foundation (ASF) under one
 @REM or more contributor license agreements.  See the NOTICE file
@@ -17,6 +18,7 @@
 @REM under the License.
 @REM ----------------------------------------------------------------------------
 
+
 @REM ----------------------------------------------------------------------------
 @REM Maven2 Start Up Batch script
 @REM
@@ -35,6 +37,11 @@
 
 @REM Begin all REM lines with '@' in case MAVEN_BATCH_ECHO is 'on'
 @echo off
+<<<<<<< HEAD
+=======
+@REM set title of command window
+title %0
+>>>>>>> ed621532bf6d887f1872e8045a090e1fcf03eb7a
 @REM enable echoing my setting MAVEN_BATCH_ECHO to 'on'
 @if "%MAVEN_BATCH_ECHO%" == "on"  echo %MAVEN_BATCH_ECHO%
 
