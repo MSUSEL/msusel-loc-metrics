@@ -25,15 +25,15 @@
  */
 package edu.montana.gsoc.msusel.codetree.metrics.loc;
 
+import com.google.common.collect.Maps;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.lang.reflect.Type;
 import java.util.List;
 import java.util.Map;
-
-import com.google.common.collect.Maps;
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
 
 /**
  * Class to manage the use of LoCProfiles including the loading and selection of
@@ -44,6 +44,7 @@ import com.google.gson.reflect.TypeToken;
  */
 public class ProfileManager {
 
+    private static final String DEFAULT_LOCATION = "/edu/montana/gsoc/msusel/codetree/metrics/loc/profiles/default.json";
     /**
      * Map of known profiles where the served extensions are the key
      */
@@ -125,7 +126,7 @@ public class ProfileManager {
      */
     public void loadProfiles()
     {
-        InputStream is = ProfileManager.class.getResourceAsStream("/com/sparqline/metrics/loc/profiles/default.json");
+        InputStream is = ProfileManager.class.getResourceAsStream(DEFAULT_LOCATION);
 
         Gson gson = new Gson();
         Type list = new TypeToken<List<LoCProfile>>() {
