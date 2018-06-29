@@ -23,7 +23,12 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package edu.montana.gsoc.msusel.codetree.metrics.loc.internal;
+package edu.montana.gsoc.msusel.datamodel.metrics.loc.internal;
+
+import com.google.common.collect.Lists;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import edu.montana.gsoc.msusel.metrics.LoCProfile;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -32,12 +37,6 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 import java.util.List;
-
-import com.google.common.collect.Lists;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-
-import edu.montana.gsoc.msusel.codetree.metrics.loc.LoCProfile;
 
 /**
  * Generates a JSON document containing the default LOC Profiles for several
@@ -59,48 +58,66 @@ public class GenerateDefault {
         List<LoCProfile> profiles = Lists.newArrayList();
 
         // Java
-        LoCProfile java = new LoCProfile.Builder("Java").extension("java")
+        LoCProfile java = LoCProfile.builder()
+                .name("Java")
+                .extensions(Lists.newArrayList("java"))
                 .language("Java")
-                .lineComment("//")
-                .blockComment("/*", "*/")
-                .build();
+                .lineCommentStart("//")
+                .blockCommentStart("/*")
+                .blockCommentEnd("*/")
+                .create();
         profiles.add(java);
 
         // C#
-        LoCProfile csharp = new LoCProfile.Builder("C#").extension("cs")
+        LoCProfile csharp = LoCProfile.builder()
+                .name("C#")
+                .extensions(Lists.newArrayList("cs"))
                 .language("C#")
-                .lineComment("//")
-                .blockComment("/*", "*/")
-                .build();
+                .lineCommentStart("//")
+                .blockCommentStart("/*")
+                .blockCommentEnd("*/")
+                .create();
         profiles.add(csharp);
 
         // Bourne Shell
-        LoCProfile bourne = new LoCProfile.Builder("Bourne Shell").extension("sh")
+        LoCProfile bourne = LoCProfile.builder()
+                .name("Bourne Shell")
+                .extensions(Lists.newArrayList("sh"))
                 .language("Bourne Shell")
-                .lineComment("#")
-                .commentException("#!")
-                .build();
+                .lineCommentStart("#")
+                .commentStartExceptions(Lists.newArrayList("#!"))
+                .create();
         profiles.add(bourne);
 
         // Ruby
-        LoCProfile ruby = new LoCProfile.Builder("Ruby").extension("rb").language("ruby").lineComment("#").build();
+        LoCProfile ruby = LoCProfile.builder()
+                .name("Ruby")
+                .extensions(Lists.newArrayList("rb"))
+                .language("ruby")
+                .lineCommentStart("#")
+                .create();
         profiles.add(ruby);
 
         // C
-        LoCProfile c = new LoCProfile.Builder("C").extension("c")
+        LoCProfile c = LoCProfile.builder()
+                .name("C")
+                .extensions(Lists.newArrayList("c"))
                 .language("C")
-                .lineComment("//")
-                .blockComment("/*", "*/")
-                .build();
+                .lineCommentStart("//")
+                .blockCommentStart("/*")
+                .blockCommentEnd("*/")
+                .create();
         profiles.add(c);
 
         // C++
-        LoCProfile cpp = new LoCProfile.Builder("C++").extension("cpp")
-                .extension("cc")
+        LoCProfile cpp = LoCProfile.builder()
+                .name("C++")
+                .extensions(Lists.newArrayList("cpp", "cc"))
                 .language("cpp")
-                .lineComment("//")
-                .blockComment("/*", "*/")
-                .build();
+                .lineCommentStart("//")
+                .blockCommentStart("/*")
+                .blockCommentEnd("*/")
+                .create();
         profiles.add(cpp);
 
         Gson gson = new GsonBuilder().setPrettyPrinting().create();

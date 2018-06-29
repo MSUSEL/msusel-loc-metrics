@@ -23,32 +23,24 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package edu.montana.gsoc.msusel.codetree.metrics.loc;
+package edu.montana.gsoc.msusel.datamodel.metrics.loc;
 
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.nio.file.DirectoryStream;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.nio.file.StandardOpenOption;
-import java.util.List;
-import java.util.Queue;
-
-import org.apache.commons.cli.CommandLine;
-import org.apache.commons.cli.CommandLineParser;
-import org.apache.commons.cli.DefaultParser;
-import org.apache.commons.cli.HelpFormatter;
-import org.apache.commons.cli.Option;
-import org.apache.commons.cli.Options;
-import org.apache.commons.cli.ParseException;
+import com.google.common.collect.Lists;
+import com.google.common.collect.Queues;
+import edu.montana.gsoc.msusel.metrics.LoCProfile;
+import edu.montana.gsoc.msusel.metrics.LoCProfileManager;
+import edu.montana.gsoc.msusel.metrics.UnknownProfileException;
+import org.apache.commons.cli.*;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVPrinter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.google.common.collect.Lists;
-import com.google.common.collect.Queues;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.nio.file.*;
+import java.util.List;
+import java.util.Queue;
 
 /**
  * Command line interface for the SparQLine Analytics LoC Counter tool.
@@ -145,7 +137,7 @@ public class SQLoCCli {
     private static void measure(LoCCounter counter, List<Path> files)
     {
         LOG.info("Analyzing collected files and measuring LoC metrics...");
-        ProfileManager manager = new ProfileManager();
+        LoCProfileManager manager = LoCProfileManager.getInstance();
 
         manager.loadProfiles();
         files.forEach((path) -> {

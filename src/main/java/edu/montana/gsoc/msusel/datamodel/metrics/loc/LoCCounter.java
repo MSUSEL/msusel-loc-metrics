@@ -23,20 +23,20 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package edu.montana.gsoc.msusel.codetree.metrics.loc;
+package edu.montana.gsoc.msusel.datamodel.metrics.loc;
+
+import com.google.common.collect.HashBasedTable;
+import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
+import com.google.common.collect.Table;
+import edu.montana.gsoc.msusel.metrics.LoCProfile;
+import org.eclipse.jdt.annotation.NonNull;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import org.eclipse.jdt.annotation.NonNull;
-
-import com.google.common.collect.HashBasedTable;
-import com.google.common.collect.Lists;
-import com.google.common.collect.Maps;
-import com.google.common.collect.Table;
 
 /**
  * Class used to count the lines of code metrics for a given body of text.

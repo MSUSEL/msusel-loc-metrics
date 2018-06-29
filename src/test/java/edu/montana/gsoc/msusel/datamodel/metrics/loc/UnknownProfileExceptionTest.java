@@ -23,7 +23,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package edu.montana.gsoc.msusel.codetree.metrics.loc;
+package edu.montana.gsoc.msusel.datamodel.metrics.loc;
 
 import static org.junit.Assert.*;
 
@@ -35,7 +35,7 @@ import org.junit.Test;
  * @author Isaac Griffith
  * @version 1.1.1
  */
-public class LoCProfileTest {
+public class UnknownProfileExceptionTest {
 
     /**
      * @throws java.lang.Exception
@@ -54,64 +54,46 @@ public class LoCProfileTest {
     }
 
     /**
-     * Test method for {@link LoCProfile#getName()}.
+     * Test method for {@link UnknownProfileException#UnknownProfileException()}.
      */
     @Test
-    public final void testGetName()
+    public final void testUnknownProfileException()
     {
         fail("Not yet implemented"); // TODO
     }
 
     /**
-     * Test method for {@link LoCProfile#getLanguage()}.
+     * Test method for {@link UnknownProfileException#UnknownProfileException(java.lang.String, java.lang.Throwable, boolean, boolean)}.
      */
     @Test
-    public final void testGetLanguage()
+    public final void testUnknownProfileExceptionStringThrowableBooleanBoolean()
     {
         fail("Not yet implemented"); // TODO
     }
 
     /**
-     * Test method for {@link LoCProfile#getExtensions()}.
+     * Test method for {@link UnknownProfileException#UnknownProfileException(java.lang.String, java.lang.Throwable)}.
      */
     @Test
-    public final void testGetExtensions()
+    public final void testUnknownProfileExceptionStringThrowable()
     {
         fail("Not yet implemented"); // TODO
     }
 
     /**
-     * Test method for {@link LoCProfile#getLineCommentStart()}.
+     * Test method for {@link UnknownProfileException#UnknownProfileException(java.lang.String)}.
      */
     @Test
-    public final void testGetLineCommentStart()
+    public final void testUnknownProfileExceptionString()
     {
         fail("Not yet implemented"); // TODO
     }
 
     /**
-     * Test method for {@link LoCProfile#getBlockCommentStart()}.
+     * Test method for {@link UnknownProfileException#UnknownProfileException(java.lang.Throwable)}.
      */
     @Test
-    public final void testGetBlockCommentStart()
-    {
-        fail("Not yet implemented"); // TODO
-    }
-
-    /**
-     * Test method for {@link LoCProfile#getBlockCommentEnd()}.
-     */
-    @Test
-    public final void testGetBlockCommentEnd()
-    {
-        fail("Not yet implemented"); // TODO
-    }
-
-    /**
-     * Test method for {@link LoCProfile#getCommentStartExceptions()}.
-     */
-    @Test
-    public final void testGetCommentStartExceptions()
+    public final void testUnknownProfileExceptionThrowable()
     {
         fail("Not yet implemented"); // TODO
     }

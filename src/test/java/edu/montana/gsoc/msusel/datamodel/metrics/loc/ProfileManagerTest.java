@@ -23,7 +23,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package edu.montana.gsoc.msusel.codetree.metrics.loc;
+package edu.montana.gsoc.msusel.datamodel.metrics.loc;
 
 import static org.junit.Assert.*;
 
@@ -35,7 +35,7 @@ import org.junit.Test;
  * @author Isaac Griffith
  * @version 1.1.1
  */
-public class UnknownProfileExceptionTest {
+public class ProfileManagerTest {
 
     /**
      * @throws java.lang.Exception
@@ -54,46 +54,37 @@ public class UnknownProfileExceptionTest {
     }
 
     /**
-     * Test method for {@link UnknownProfileException#UnknownProfileException()}.
+     * Test method for {@link ProfileManager#ProfileManager()}.
      */
     @Test
-    public final void testUnknownProfileException()
+    public final void testProfileManager()
     {
         fail("Not yet implemented"); // TODO
     }
 
     /**
-     * Test method for {@link UnknownProfileException#UnknownProfileException(java.lang.String, java.lang.Throwable, boolean, boolean)}.
+     * Test method for {@link ProfileManager#addProfile(LoCProfile)}.
      */
     @Test
-    public final void testUnknownProfileExceptionStringThrowableBooleanBoolean()
+    public final void testAddProfile()
     {
         fail("Not yet implemented"); // TODO
     }
 
     /**
-     * Test method for {@link UnknownProfileException#UnknownProfileException(java.lang.String, java.lang.Throwable)}.
+     * Test method for {@link ProfileManager#getProfileByExtension(java.lang.String)}.
      */
     @Test
-    public final void testUnknownProfileExceptionStringThrowable()
+    public final void testGetProfileByExtension()
     {
         fail("Not yet implemented"); // TODO
     }
 
     /**
-     * Test method for {@link UnknownProfileException#UnknownProfileException(java.lang.String)}.
+     * Test method for {@link ProfileManager#getProfileByLanguage(java.lang.String)}.
      */
     @Test
-    public final void testUnknownProfileExceptionString()
-    {
-        fail("Not yet implemented"); // TODO
-    }
-
-    /**
-     * Test method for {@link UnknownProfileException#UnknownProfileException(java.lang.Throwable)}.
-     */
-    @Test
-    public final void testUnknownProfileExceptionThrowable()
+    public final void testGetProfileByLanguage()
     {
         fail("Not yet implemented"); // TODO
     }

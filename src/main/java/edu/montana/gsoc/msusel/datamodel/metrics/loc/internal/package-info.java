@@ -24,10 +24,10 @@
  * SOFTWARE.
  */
 /**
- * This package contains the classes needed to conduct LOC analysis of a file or
- * some text.
+ * This package includes tools used to generate the default loc profiles for
+ * multiple languages.
  * 
  * @author Isaac Griffith
- * @version 1.1.0
+ * @version 1.1.1
  */
-package edu.montana.gsoc.msusel.codetree.metrics.loc;
+package edu.montana.gsoc.msusel.datamodel.metrics.loc.internal;
