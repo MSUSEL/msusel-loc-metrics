@@ -29,6 +29,6 @@
  * multiple languages.
  * 
  * @author Isaac Griffith
- * @version 1.1.1
+ * @version 1.3.0
  */
 package edu.montana.gsoc.msusel.datamodel.metrics.loc.internal;

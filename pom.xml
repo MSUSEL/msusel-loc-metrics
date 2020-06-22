@@ -27,6 +27,11 @@
 		</developer>
 	</developers>
 
+	<properties>
+		<siteRepoName>msusel-loc-metrics</siteRepoName>
+		<siteOwner>MSUSEL</siteOwner>
+	</properties>
+
 	<build>
 		<plugins>
 			<plugin>
